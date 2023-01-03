@@ -1,0 +1,64 @@
+{
+  "name":              "dcodejava/roli-work-permit",
+  "description":       "MVP Online Book Library system",
+  "homepage":          "https://github.com/dcodejava/roli-work-permit",
+  "type":              "wordpress-plugin",
+  "version":           "0.1",
+  "keywords":          [
+    "WordPress",
+    "plugins",
+    "themes",
+    "book",
+    "skeleton",
+    "Roli",
+    "library",
+    "management",
+    "system"
+  ],
+  "autoload":          {
+    "psr-4":   {
+      "Roli\\": "src/"
+    },
+    "scripts": {
+      "post-install-cmd": [
+        "wp-enforcer"
+      ],
+      "post-update-cmd":  [
+        "wp-enforcer"
+      ]
+    }
+  },
+  "require":           {
+    "php":                 ">=8",
+    "whichbrowser/parser": "^2.1"
+  },
+  "repositories":      [
+    {
+      "type": "vcs",
+      "url":  "https://github.com/dcodejava/roli-work-permit"
+    }
+  ],
+  "minimum-stability": "stable",
+  "authors":           [
+    {
+      "name":     "Dickson Okorodudu",
+      "email":    "dcodejava@gmail.com",
+      "homepage": "https://dcodejava.com",
+      "role":     "Developer"
+    },
+    {
+      "name":     "Daniel Dickson",
+      "email":    "dcodejava@gmail.com",
+      "homepage": "https://dcodejava.com",
+      "role":     "Developer"
+    }
+  ],
+  "support":           {
+    "email": "dcodejava@gmail.com"
+  },
+  "config":            {
+    "platform": {
+      "php": "8.1"
+    }
+  }
+}
